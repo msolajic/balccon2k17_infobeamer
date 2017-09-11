@@ -1,0 +1,14 @@
+[{
+    "module": "images"
+},{
+    "module": "twitter"
+},{
+    "module": "logo"
+},{
+    "module": "text",
+    "options": {
+        "text": "WE MADE IT! BalCCon2k16 is officially over! Thanks to all the participants, volunteers and attendees!"
+    }
+},{
+    "module": "ads"
+}]
