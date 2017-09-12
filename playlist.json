@@ -4,7 +4,7 @@
         "videos": [
 			{
                 "file": "2K17SQUARE.mp4",
-                "duration": 15,
+                "duration": 13,
                 "raw": false,
                 "text": ""
             }
@@ -13,7 +13,7 @@
 },{
     "module": "talks",
     "options": {
-        "duration": 20
+        "duration": 30
     }
 }, {
     "module": "text",
@@ -23,7 +23,13 @@
 }, {
     "module": "images"
 }, {
+    "module": "images"
+}, {
     "module": "twitter"
+}, {
+    "module": "twitter"
+}, {
+    "module": "ads"
 }, {
     "module": "ads"
 }, {
