@@ -69,7 +69,7 @@ function M.run(duration, tweet, fn)
     end
     a.add(anims.moving_font(S, E, x, y, age .. " ago", 50, 1,1,1,1)); S=S+0.1; y=y+60
 
-    a.add(anims.tweet_profile(S, E, x, start_y, background, 120))
+    a.add(anims.tweet_profile(S, E, x, start_y, img, 120))
 
     for now in fn.upto_t(E) do
         a.draw(now)
