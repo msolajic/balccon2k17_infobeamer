@@ -41,6 +41,11 @@ function M.run(duration, tweet, fn)
         file = tweet.profile:copy(),
         mipmap = true,
     }
+ 
+	local imag = resource.load_image{
+        file = tweet.image:copy(),
+        mipmap = true,
+    }
 
     local start_y = 100
 
@@ -69,7 +74,7 @@ function M.run(duration, tweet, fn)
     end
     a.add(anims.moving_font(S, E, x, y, age .. " ago", 50, 1,1,1,1)); S=S+0.1; y=y+60
 
-    a.add(anims.tweet_profile(S, E, x, start_y, img, 120))
+    a.add(anims.tweet_profile(S, E, x, start_y, imag, 120))
 
     for now in fn.upto_t(E) do
         a.draw(now)
