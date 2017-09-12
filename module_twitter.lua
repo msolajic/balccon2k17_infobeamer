@@ -18,7 +18,7 @@ local unwatch = util.file_watch("tweets.json", function(raw)
             table.remove(tweets, idx)
         end
         tweet.profile = profile 
-        tweet.lines = utils.wrap(tweet.text, 27)
+        tweet.lines = utils.wrap(tweet.text, 40)
     end
 end)
 
