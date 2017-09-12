@@ -1,14 +1,31 @@
 [{
-    "module": "images"
-},{
-    "module": "twitter"
-},{
-    "module": "logo"
-},{
-    "module": "text",
+    "module": "videos",
     "options": {
-        "text": "WE MADE IT! BalCCon2k16 is officially over! Thanks to all the participants, volunteers and attendees!"
+        "videos": [
+			{
+                "file": "2K17SQUARE.mp4",
+                "duration": 15,
+                "raw": false,
+                "text": ""
+            }
+        ]
     }
 },{
+    "module": "talks",
+    "options": {
+        "duration": 30
+    }
+}, {
+    "module": "images"
+}, {
+    "module": "images"
+}, {
     "module": "ads"
+}, {
+    "module": "ads"
+}, {
+    "module": "text",
+    "options": {
+        "text": "Want to show your project, announce an assembly or have any other important information? Contact marko@lugons.org"
+    }
 }]
