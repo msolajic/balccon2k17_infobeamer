@@ -16,6 +16,11 @@
         "duration": 30
     }
 }, {
+    "module": "text",
+    "options": {
+        "text": "u\ncnt\nctrl\nme"
+    }
+}, {
     "module": "images"
 }, {
     "module": "images"
