@@ -13,7 +13,7 @@
 },{
     "module": "talks",
     "options": {
-        "duration": 30
+        "duration": 20
     }
 }, {
     "module": "text",
@@ -23,9 +23,7 @@
 }, {
     "module": "images"
 }, {
-    "module": "images"
-}, {
-    "module": "ads"
+    "module": "twitter"
 }, {
     "module": "ads"
 }, {
