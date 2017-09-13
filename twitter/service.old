@@ -49,8 +49,36 @@ def transform(tweet):
         print >>sys.stderr, "GARBAGE: duplicate user"
         return
 
+    if hasattr(tweet, 'retweeted_status'):
+        print >>sys.stderr, "GARBAGE: ehh. retweet"
+        return
+
     if tweet.user.default_profile:
         print >>sys.stderr, "GARBAGE: Default profile"
+        return
+
+    if tweet.user.default_profile_image:
+        print >>sys.stderr, "GARBAGE: Default profile image"
+        return
+
+    if tweet.text.startswith("."):
+        print >>sys.stderr, "GARBAGE: Dot tweet"
+        return
+
+    if tweet.text.startswith("@"):
+        print >>sys.stderr, "GARBAGE: starts with @"
+        return
+
+    if tweet.text.startswith("RT "):
+        print >>sys.stderr, "GARBAGE: starts with RT"
+        return
+
+    if tweet.user.followers_count < 10:
+        print >>sys.stderr, "GARBAGE: too few followers"
+        return
+
+    if tweet.user.description is None:
+        print >>sys.stderr, "GARBAGE: no description"
         return
 
     replacements = []
@@ -111,7 +139,6 @@ except:
 class Worker(Thread):
     def run(self):
         next_profile_image = cycle('twitter-profile-%d.jpg' % n for n in range(10)).next
-		next_background_image = cycle('twitter-background-%d.jpg' % n for n in range(10)).next
         while 1:
             tweet = workqueue.get()
 
@@ -134,29 +161,6 @@ class Worker(Thread):
                 pass
             os.symlink(os.path.join(TMPDIR, profile_image), os.path.join('..', profile_image))
 
-            if tweet['background_image']:
-            try:
-                r = requests.get("http://miscbox.dividuum.de/scale/png", params={
-                    'src': tweet['background_image'],
-                }, timeout=5)
-            except:
-                traceback.print_exc()
-                continue
-				
-                background_image = next_background_image()
-                # print "writing background %s" % background_image
-                with file(os.path.join(TMPDIR, background_image), "wb") as f:
-                    f.write(r.content)
-                tweet['background_image'] = background_image
-                try:
-                    os.unlink(background_image)
-                except:
-                    pass
-                os.symlink(os.path.join(TMPDIR, background_image), os.path.join('..', background_image))
-            else:
-                del tweet['background_image']
-			
-			
             tweet['created_at'] = calendar.timegm(tweet['created_at'].utctimetuple())
 
             tweets.append(tweet)
