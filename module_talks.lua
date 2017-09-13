@@ -70,7 +70,7 @@ function M.prepare(options)
             next_talks[#next_talks+1] = {
                 speakers = #talk.speakers == 0 and {"?"} or talk.speakers;
                 place = talk.place;
-                lines = utils.wrap(talk.title, 45);
+                lines = utils.wrap(talk.title, 40);
                 start_str = talk.start_str;
                 start_unix = talk.start_unix;
                 redundant = redundant;
