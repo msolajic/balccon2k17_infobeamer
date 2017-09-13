@@ -82,9 +82,9 @@ def transform(tweet):
         return
 
     replacements = []
- #   for url in tweet.entities.get('urls', ()):
- #       replacements.append((url['indices'], url['display_url']))
- #   replacements.sort(reverse=True)
+    for url in tweet.entities.get('urls', ()):
+        replacements.append((url['indices'], url['display_url']))
+    replacements.sort(reverse=True)
 
     text = unicode(tweet.text)
     for (start, end), replacement in replacements:
