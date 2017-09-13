@@ -10,7 +10,7 @@ function M.can_schedule()
 end
 
 function M.prepare(options)
-    return #options.text / READING_SPEED + 2, utils.wrap(options.text, 23)
+    return #options.text / READING_SPEED + 2, utils.wrap(options.text, 26)
 end
 
 function M.run(duration, lines, fn)

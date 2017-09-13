@@ -49,7 +49,37 @@ def transform(tweet):
         print >>sys.stderr, "GARBAGE: duplicate user"
         return
 
+    if hasattr(tweet, 'retweeted_status'):
+        print >>sys.stderr, "GARBAGE: ehh. retweet"
+        return
 
+    if tweet.user.default_profile:
+        print >>sys.stderr, "GARBAGE: Default profile"
+        return
+
+    if tweet.user.default_profile_image:
+        print >>sys.stderr, "GARBAGE: Default profile image"
+        return
+
+    if tweet.text.startswith("."):
+        print >>sys.stderr, "GARBAGE: Dot tweet"
+        return
+
+    if tweet.text.startswith("@"):
+        print >>sys.stderr, "GARBAGE: starts with @"
+        return
+
+    if tweet.text.startswith("RT "):
+        print >>sys.stderr, "GARBAGE: starts with RT"
+        return
+
+    if tweet.user.followers_count < 10:
+        print >>sys.stderr, "GARBAGE: too few followers"
+        return
+
+    if tweet.user.description is None:
+        print >>sys.stderr, "GARBAGE: no description"
+        return
 
     replacements = []
     for url in tweet.entities.get('urls', ()):
