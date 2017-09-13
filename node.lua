@@ -230,7 +230,7 @@ Sidebar = (function()
             loop:stop()
         end
 
-        local size = 80
+        local size = 60
         local hour, min = Time.walltime()
         local time = string.format("%d:%02d", hour, min)
         local w = res.font:width(time, size)
