@@ -14,14 +14,14 @@ function M.prepare(options)
 end
 
 function M.run(duration, lines, fn)
-    local y = 200
+    local y = 100
     local a = utils.Animations()
 
     local S = 0.0
     local E = duration
 
     for idx = 1, #lines do
-        a.add(anims.moving_font(S, E, 200, y, lines[idx], 150, 1,1,1,1)); S=S+0.1; y=y+150
+        a.add(anims.moving_font(S, E, 100, y, lines[idx], 150, 1,1,1,1)); S=S+0.1; y=y+150
     end
 
     fn.wait_t(0)
