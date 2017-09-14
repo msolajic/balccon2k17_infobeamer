@@ -14,7 +14,7 @@ function M.prepare(options)
 end
 
 function M.run(duration, lines, fn)
-    local y = 80
+    local y = 200
     local a = utils.Animations()
 
     local S = 0.0
