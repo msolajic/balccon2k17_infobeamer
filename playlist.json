@@ -18,11 +18,6 @@
 }, {
     "module": "text",
     "options": {
-        "text": "SMD SOLDERING WORKSHOP STARTS NOW IN THE HACKERSPACE AREA!"
-    }
-}, {
-    "module": "text",
-    "options": {
         "text": "Please leave your empty Mate-bottles at the lounge. We need them for our Mate-Wall :)"
     }
 }, {
