@@ -21,6 +21,11 @@
         "text": "WELCOME\nto the fifth BalCCon\nBalkan Computer Congress\nu cnt ctrl me"
     }
 }, {
+    "module": "text",
+    "options": {
+        "text": "Please leave your empty Mate-bottles at the lounge. We need them for our Mate-Wall :)"
+    }
+}, {
     "module": "images"
 }, {
     "module": "images"
