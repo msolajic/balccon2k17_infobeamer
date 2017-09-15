@@ -25,6 +25,11 @@
 }, {
     "module": "images"
 }, {
+    "module": "text",
+    "options": {
+        "text": "BRACE YOURSELF! RAKIJA IS COMING!"
+    }
+}, {
     "module": "twitter"
 }, {
     "module": "twitter"
