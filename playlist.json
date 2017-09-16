@@ -23,18 +23,28 @@
 }, {
     "module": "images"
 }, {
+    "module": "text",
+    "options": {
+        "text": "LIGHTNING TALKS WITH NICK FARR POSTPONED FOR 7:30PM"
+    }
+}, {
     "module": "images"
+}, {
+    "module": "twitter"
 }, {
     "module": "text",
     "options": {
-        "text": "BRACE YOURSELF! RAKIJA IS COMING!"
+        "text": "LIGHTNING TALKS WITH NICK FARR POSTPONED FOR 7:30PM"
     }
 }, {
     "module": "twitter"
 }, {
-    "module": "twitter"
-}, {
     "module": "ads"
+}, {
+    "module": "text",
+    "options": {
+        "text": "LIGHTNING TALKS WITH NICK FARR POSTPONED FOR 7:30PM"
+    }
 }, {
     "module": "ads"
 }, {
