@@ -16,40 +16,20 @@
         "duration": 30
     }
 }, {
-    "module": "text",
-    "options": {
-        "text": "Please leave your empty Mate-bottles at the lounge. We need them for our Mate-Wall :)"
-    }
-}, {
     "module": "images"
-}, {
-    "module": "text",
-    "options": {
-        "text": "LIGHTNING TALKS WITH NICK FARR POSTPONED FOR 7:30PM"
-    }
 }, {
     "module": "images"
 }, {
     "module": "twitter"
 }, {
-    "module": "text",
-    "options": {
-        "text": "LIGHTNING TALKS WITH NICK FARR POSTPONED FOR 7:30PM"
-    }
-}, {
     "module": "twitter"
 }, {
     "module": "ads"
 }, {
-    "module": "text",
-    "options": {
-        "text": "LIGHTNING TALKS WITH NICK FARR POSTPONED FOR 7:30PM"
-    }
-}, {
     "module": "ads"
 }, {
     "module": "text",
     "options": {
-        "text": "Want to show your project, announce an assembly or have any other important information? Contact marko@lugons.org"
+        "text": "U CNT CTRL ME\nU CNT CTRL ME\nU CNT CTRL ME\nU CNT CTRL ME\nU CNT CTRL ME\nU CNT CTRL ME\nU CNT CTRL ME\n"
     }
 }]
